@@ -15,7 +15,7 @@ depends=(
 )
 makedepends=('git')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('56a96e4b5de8203007fd2eda01746c4b3d287017f2dcc240f7181e36de7e2cc6')
 
 package() {
     cd "$srcdir/$_reponame-$pkgver"
