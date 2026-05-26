@@ -36,8 +36,8 @@ paru -S controller-manager
 ### Manual install (any distro)
 
 ```sh
-git clone https://github.com/YOUR_USERNAME/controller-manager.git
-cd controller-manager
+git clone https://github.com/bandyburrito/ControllerManagerArch.git
+cd ControllerManagerArch
 pip install --user -r requirements.txt
 python main.py
 ```
@@ -74,7 +74,7 @@ python main.py
 ## Project layout
 
 ```
-controller-manager/
+ControllerManagerArch/
 ├── main.py        # entry point
 ├── backend.py     # device detection, udev monitor
 ├── widgets.py     # custom Qt widgets (cards, sticks, triggers, etc.)
@@ -97,7 +97,7 @@ If your controller isn't recognized by friendly name, it'll still show up as a g
    ```
    Brand can be `playstation`, `xbox`, `nintendo`, `steam`, or `generic`.
 
-PRs welcome.
+PRs welcome at [github.com/bandyburrito/ControllerManagerArch](https://github.com/bandyburrito/ControllerManagerArch).
 
 ## Troubleshooting
 
@@ -105,7 +105,7 @@ PRs welcome.
 Add yourself to the `input` group — see *Permissions setup* above.
 
 **Controller shows as "Unknown Controller"**
-Your model isn't in the database yet. See *Adding new controllers* above, or open an issue with the VID/PID and a `cat /proc/bus/input/devices` excerpt.
+Your model isn't in the database yet. See *Adding new controllers* above, or [open an issue](https://github.com/bandyburrito/ControllerManagerArch/issues) with the VID/PID and a `cat /proc/bus/input/devices` excerpt.
 
 **Bluetooth controller not appearing**
 Make sure it's actually paired and connected — `bluetoothctl info <MAC>` should show `Connected: yes`. Some controllers (notably Switch Pro) need extra kernel modules or `hid-nintendo` to expose proper button mappings.

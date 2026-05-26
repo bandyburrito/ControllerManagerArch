@@ -4,7 +4,8 @@ pkgver=0.1.0
 pkgrel=1
 pkgdesc="GUI for viewing connected game controllers and testing inputs on Linux"
 arch=('any')
-url="https://github.com/YOUR_USERNAME/controller-manager"
+url="https://github.com/bandyburrito/ControllerManagerArch"
+_reponame=ControllerManagerArch
 license=('MIT')
 depends=(
     'python>=3.10'
@@ -17,7 +18,7 @@ source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 package() {
-    cd "$srcdir/$pkgname-$pkgver"
+    cd "$srcdir/$_reponame-$pkgver"
 
     # Install application files
     install -d "$pkgdir/usr/share/$pkgname"
