@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Controller Manager
+GenericName=Game Controller Manager
+Comment=View connected game controllers and test inputs
+Exec=controller-manager
+Icon=input-gaming
+Terminal=false
+Categories=Utility;Settings;HardwareSettings;Game;
+Keywords=gamepad;controller;joystick;DualShock;Xbox;input;
+StartupNotify=true
